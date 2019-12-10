@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29403.142
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GRPCDemo.Client.WPFUI", "GRPCDemo.Client.WPFUI\GRPCDemo.Client.WPFUI.csproj", "{566BABCC-CB3A-4321-958C-50A79C620042}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{477EE6CA-16F0-41F3-8DC3-19C3672851F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Protos", "Protos", "{D448EF18-94CB-479E-92B5-5A9DF4D102AA}"
+	ProjectSection(SolutionItems) = preProject
+		Protos\Demo.proto = Protos\Demo.proto
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GRPCDemo.Core", "GRPCDemo.Core\GRPCDemo.Core.csproj", "{50D8B5DE-AE92-48F6-9B84-6D580AF213EF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GRPCDemo.Client", "GRPCDemo.Client\GRPCDemo.Client.csproj", "{C2489BFC-7028-47A1-A074-73B15D9868B9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GRPCDemo.Server", "GRPCDemo.Server\GRPCDemo.Server.csproj", "{AF97F2FB-BBE7-4C43-91C2-EB4EF368184F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{566BABCC-CB3A-4321-958C-50A79C620042}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{566BABCC-CB3A-4321-958C-50A79C620042}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{566BABCC-CB3A-4321-958C-50A79C620042}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{566BABCC-CB3A-4321-958C-50A79C620042}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50D8B5DE-AE92-48F6-9B84-6D580AF213EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50D8B5DE-AE92-48F6-9B84-6D580AF213EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50D8B5DE-AE92-48F6-9B84-6D580AF213EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50D8B5DE-AE92-48F6-9B84-6D580AF213EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2489BFC-7028-47A1-A074-73B15D9868B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2489BFC-7028-47A1-A074-73B15D9868B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2489BFC-7028-47A1-A074-73B15D9868B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2489BFC-7028-47A1-A074-73B15D9868B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF97F2FB-BBE7-4C43-91C2-EB4EF368184F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF97F2FB-BBE7-4C43-91C2-EB4EF368184F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF97F2FB-BBE7-4C43-91C2-EB4EF368184F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF97F2FB-BBE7-4C43-91C2-EB4EF368184F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{566BABCC-CB3A-4321-958C-50A79C620042} = {477EE6CA-16F0-41F3-8DC3-19C3672851F2}
+		{50D8B5DE-AE92-48F6-9B84-6D580AF213EF} = {477EE6CA-16F0-41F3-8DC3-19C3672851F2}
+		{C2489BFC-7028-47A1-A074-73B15D9868B9} = {477EE6CA-16F0-41F3-8DC3-19C3672851F2}
+		{AF97F2FB-BBE7-4C43-91C2-EB4EF368184F} = {477EE6CA-16F0-41F3-8DC3-19C3672851F2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB948CAE-BB69-403F-A9ED-3C6E3482E313}
+	EndGlobalSection
+EndGlobal

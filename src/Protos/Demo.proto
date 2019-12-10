@@ -1,0 +1,30 @@
+﻿syntax = "proto3";
+
+package GRPCDemo.Core;
+
+service DemoService {
+	rpc Echo(Message) returns (Message) {}
+	rpc GetFile (FileRequest) returns (stream FileChunk) {}
+}
+
+message Message {
+	string Value = 1;
+}
+
+message FileRequest {
+	string ID = 1;
+}
+
+message FileChunk {
+	string ID = 1;
+	string Name = 2;
+	string Extension = 3;
+	bytes Chunk = 4;
+}
+
+message File {
+	string ID = 1;
+	string Name = 2;
+	string Extension = 3;
+	bytes Content = 4;
+}
