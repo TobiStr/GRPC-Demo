@@ -9,11 +9,13 @@ namespace GRPCDemo.Server
         public static void Main(string[] args)
             => CreateHostBuilder(args).Build().Run();
 
-        public static IHostBuilder CreateHostBuilder(string[] args) 
+        public static IHostBuilder CreateHostBuilder(string[] args)
             => Host.CreateDefaultBuilder(args)
                 .ConfigureLogging(builder => builder.AddConsole())
                 .ConfigureWebHostDefaults(webBuilder
                     => webBuilder.UseStartup<Startup>()
-                );
+                ).ConfigureLogging((hostingContext, builder) => {
+                    builder.AddFile("Logs/log_{Date}.log", LogLevel.Trace);
+                });
     }
 }
